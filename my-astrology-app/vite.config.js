@@ -8,13 +8,13 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://astrobackend.vercel.app/",
+        target: "https://astrobackend.vercel.app",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
       "/wsapi": {
-        target: "https://astrobackend.vercel.app/",
+        target: "https://astrobackend.vercel.app",
         ws: true,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/wsapi/, ""),
