@@ -18,7 +18,7 @@ const LoginPage = () => {
         setError(null); // Reset previous errors
 
         try {
-            const response = await fetch('/api/auth/login/', {
+            const response = await fetch('/auth/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
