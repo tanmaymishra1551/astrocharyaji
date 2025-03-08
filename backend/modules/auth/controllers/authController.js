@@ -59,3 +59,7 @@ export const loggedInUserDetails = (userId) => {
     const { password, refreshToken, ...safeUserData } = user;
     return safeUserData;
 };
+
+export const testController = (req, res) => {
+    res.json({ message: "Test successful" });
+}
