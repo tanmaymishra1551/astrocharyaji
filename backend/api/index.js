@@ -41,5 +41,4 @@ connectDB().catch((error) => {
 })
 
 // Instead of starting the server with app.listen, export the app wrapped by serverless-http
-export default app
-export const handler = serverless(app)
+export default serverless(app)
