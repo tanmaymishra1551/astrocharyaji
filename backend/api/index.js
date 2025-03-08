@@ -35,10 +35,10 @@ app.use((err, req, res, next) => {
     res.status(500).json({ error: err.message })
 })
 
-// Connect to your database (if needed)
-connectDB().catch((error) => {
-    console.error(`MongoDB connection failed: ${error}`)
-})
+// // Connect to your database (if needed)
+// connectDB().catch((error) => {
+//     console.error(`MongoDB connection failed: ${error}`)
+// })
 
 // Instead of starting the server with app.listen, export the app wrapped by serverless-http
 export default serverless(app)
